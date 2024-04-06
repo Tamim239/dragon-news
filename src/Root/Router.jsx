@@ -5,11 +5,13 @@ import { Login } from "../Pages/Login/Login";
 import { Register } from "../Pages/Register/Register";
 import { News } from "../Pages/News/News";
 import { PrivateRoutes } from "./PrivateRoutes";
+import { ErrorElement } from "./ErrorElement";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorElement></ErrorElement>,
     children: [
       {
         path: "/",
